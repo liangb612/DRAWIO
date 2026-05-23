@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="第 1 页" id="YTGiBx9rFFHMN2bzSRFx">
+    <mxGraphModel dx="953" dy="589" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LIODiAlKvlo4IzszYYSb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=25;align=center;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;开始&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="166.25" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="LIODiAlKvlo4IzszYYSb-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="本文两阶段鲁棒优化求解流程图" vertex="1">
+          <mxGeometry height="70" width="210" x="280" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="LIODiAlKvlo4IzszYYSb-9" edge="1" parent="1" source="LIODiAlKvlo4IzszYYSb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="LIODiAlKvlo4IzszYYSb-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIODiAlKvlo4IzszYYSb-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;verticalAlign=middle;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;输入参数，对调节因子赋值；将问题处理为MILP&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="166.25" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="LIODiAlKvlo4IzszYYSb-6" edge="1" parent="1" source="LIODiAlKvlo4IzszYYSb-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="LIODiAlKvlo4IzszYYSb-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="320" as="sourcePoint" />
+            <mxPoint x="180" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-9" edge="1" parent="1" source="LIODiAlKvlo4IzszYYSb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LIODiAlKvlo4IzszYYSb-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;初始化：迭代变量o=0;问题下界LB初始化为-\(\infty\),问题上界UB初始化为+\(\infty\)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="152.5" x="150" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-11" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;求解主问题（式（3-4）），得到主问题&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;解向量\(u_{x}^{*}\)，和\(x^{*}\)；更新下界LB为&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;主问题的目标函数值\({\phi_{mp}^{\mathrm{*}}}\)，即LB=\({{\phi}_{mp}^{\mathrm{*}}}\)&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="152.5" x="326.25" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;将\(u_{x}^{*}\)代入子问题的对偶形式（式（3-6）），求解子问题，得到子问题解向量\(u_{y}^{*}\)和\(y^{*}\)，更新上界为子问题的目标函数值\(\phi_{sp}^{*}\)，即UB=\(\phi_{sp}^{*}\)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="153.75" x="324.38" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-10" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;white-space: nowrap;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;取一组可行的&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;white-space: nowrap;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;不确定变量初值&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="115" x="345" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-17" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-19" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;curved=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-14" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="&lt;font face=&quot;Times New Roman&quot;&gt;\(\mathrm{UB} -\mathrm{ LB} \leq \varepsilon\)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="117.5" x="342.51" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-15" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="6dsWaw701zeCEMS-Wvkr-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-24" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-16" parent="1" style="whiteSpace=wrap;html=1;" value="输出当次循环的主问题的调度结果" vertex="1">
+          <mxGeometry height="60" width="128.12" x="158.13" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="是" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-22" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-20" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;列约束生成：创建一组子问题中与所有与\(u_{y}^{*}\)和\(y^{*}\)有关的约束的约束组，约束中的优化变量为新的变量，加入主问题，使得主问题的规模增大，可行域收缩&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="150" x="490" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="否" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="结束" vertex="1">
+          <mxGeometry height="60" width="120" x="162.19" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" value="使用&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;\(u_{y}^{*}\)和\(y^{*}\)代替主问题中的不确定变量取值&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="650" y="562.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="iKvbYWceXgB0yTkY31m5" name="第 2 页">
+    <mxGraphModel dx="953" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
