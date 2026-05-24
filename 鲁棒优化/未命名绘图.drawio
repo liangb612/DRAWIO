@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" pages="2">
   <diagram name="第 1 页" id="YTGiBx9rFFHMN2bzSRFx">
-    <mxGraphModel dx="953" dy="589" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="938" dy="519" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -69,7 +69,7 @@
         <mxCell id="6dsWaw701zeCEMS-Wvkr-22" edge="1" parent="1" source="6dsWaw701zeCEMS-Wvkr-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6dsWaw701zeCEMS-Wvkr-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6dsWaw701zeCEMS-Wvkr-20" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;列约束生成：创建一组子问题中与所有与\(u_{y}^{*}\)和\(y^{*}\)有关的约束的约束组，约束中的优化变量为新的变量，加入主问题，使得主问题的规模增大，可行域收缩&lt;/font&gt;" vertex="1">
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-20" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;列约束生成：创建一组子问题中与所有与\(u_{y}^{*}\)和\(y^{*}\)有关的约束的约束组，约束中的优化变量为新的变量，加入主问题，使得主问题的规模增大，可行域收缩，迭代变量o增加1&lt;/font&gt;" vertex="1">
           <mxGeometry height="105" width="150" x="490" y="540" as="geometry" />
         </mxCell>
         <mxCell id="6dsWaw701zeCEMS-Wvkr-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="否" vertex="1">
@@ -78,7 +78,7 @@
         <mxCell id="6dsWaw701zeCEMS-Wvkr-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="结束" vertex="1">
           <mxGeometry height="60" width="120" x="162.19" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="6dsWaw701zeCEMS-Wvkr-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" value="使用&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;\(u_{y}^{*}\)和\(y^{*}\)代替主问题中的不确定变量取值&lt;/span&gt;" vertex="1">
+        <mxCell id="6dsWaw701zeCEMS-Wvkr-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" value="使用&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;\(u_{y}^{*}\)和\(y^{*}\)代替主问题中的不确定变量取值，迭代变量o增加1&lt;/span&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="650" y="562.5" as="geometry" />
         </mxCell>
       </root>
